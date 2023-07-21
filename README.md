@@ -94,7 +94,7 @@ The RDS instance after its creation.
 
 On our local machine, we have downloaded the PHP files, and we can see that the HTTP server is running in the background.
 
-![http server](./projet/http_server_running.png)
+![http server](./projet/httpd_server_running.png)
 
 ### Store database connection information in the AWS Systems Manager
 
@@ -115,7 +115,7 @@ We can now connect to our instance and retrieve the database connection informat
 With this command pattern replacing by our information:
 
 ![SSH connection](./projet/ssh.png)
-![SSH connection](./projet/connect_via_our_own_console_to_ec2.png)
+![SSH connection](./projet/send_public_key.png)
 
 Then, once we have pushed the public key, we have 60 seconds to connect to the EC2 instance.
 
@@ -130,6 +130,6 @@ Next, we connect to our database and we execute the sql file content to have the
 ![DB connection](./projet/connection_to_db_own_console_1.png)
 ![DB connection](./projet/connection_to_db_own_console_2.png)
 
-WWe execute a "select \* from countrydata_final;" to check if the data are in the database. The result is the following:
+We execute a "select \* from countrydata_final;" to check if the data are in the database. The result is the following:
 
-![DB connection](./projet/select_via_own_console.png)
+![DB connection](./projet/query_result_on_website.png)
