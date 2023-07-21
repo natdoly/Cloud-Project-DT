@@ -96,6 +96,10 @@ The RDS instance after its creation.
 
 ![Database Creation](./projet/AWS_application/rds_creation.png)
 
+Security group RDS to EC2 instance.
+
+![Database Creation](./projet/AWS_application/sg_ec2.png)
+
 On our local machine, we have downloaded the PHP files, and we can see that the HTTP server is running in the background.
 
 ![http server](./projet/AWS_application/httpd_server_running.png)
