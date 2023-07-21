@@ -101,3 +101,35 @@ On our local machine, we have downloaded the PHP files, and we can see that the 
 Before trying to connect to our database, we must specify parameter such as database name, username, endpoint, and password. To do this, we use the AWS Systems Manager service which allow us to manage parameters.
 
 ![paramerter store](projet/db_parameter_aws_systems_manager.png)
+
+We connect to our instance using EC2 Instance Connect API. We have already generated SSH keys, and we push the public one to the instance.
+
+Then, we changed the IAM roles so that EC2 could access the AWS Systems Manager Parameter Store. No IAM role had been assigned to EC2, so we created a new one with the policy "AmazonSSMReadOnlyAccess” with the lowest privilege and greater security:
+
+![IAM role](./projet/IAM_role_db_parameter.png)
+
+We can now connect to our instance and retrieve the database connection information.
+
+### Connection with our own key and SSH client
+
+With this command pattern replacing by our information:
+
+![SSH connection](./projet/ssh.png)
+![SSH connection](./projet/connect_via_our_own_console_to_ec2.png)
+
+Then, once we have pushed the public key, we have 60 seconds to connect to the EC2 instance.
+
+![SSH connection](./projet/ec2_connect.png)
+
+Again here, we replace by our information:
+
+![SSH connection](./projet/public_key_push.png)
+
+Next, we connect to our database and we execute the sql file content to have them in our db:
+
+![DB connection](./projet/connection_to_db_own_console_1.png)
+![DB connection](./projet/connection_to_db_own_console_2.png)
+
+WWe execute a "select \* from countrydata_final;" to check if the data are in the database. The result is the following:
+
+![DB connection](./projet/select_via_own_console.png)
