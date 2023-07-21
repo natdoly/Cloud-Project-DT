@@ -133,3 +133,77 @@ Next, we connect to our database and we execute the sql file content to have the
 WWe execute a "select \* from countrydata_final;" to check if the data are in the database. The result is the following:
 
 ![DB connection](./projet/select_via_own_console.png)
+
+## QuickSight
+
+### Overview
+
+As asked, we have done the following overview with many different charts. We also added 3 more charts to try other type of charts.
+
+![Overview](./projet/QuickSight/Overview1.png)
+![Overview](./projet/QuickSight/Overview2.png)
+
+### Table
+
+![Table](./projet/QuickSight/Table1.png)
+![Table](./projet/QuickSight/Table2.png)
+![Table](./projet/QuickSight/Table3.png)
+
+To have this table, we sort the table by discount and applied 2 filters.
+
+### Horizontal Bar Chart
+
+![HorizontalBarChart](./projet/QuickSight/HorizontalBarChart1.png)
+
+We took the time to select the categories and sort by costs.
+
+![HorizontalBarChart](./projet/QuickSight/HorizontalBarChart2.png)
+![HorizontalBarChart](./projet/QuickSight/HorizontalBarChart3.png)
+
+### Donut Chart
+
+![DonutChart](./projet/QuickSight/DonutChart1.png)
+![DonutChart](./projet/QuickSight/DonutChart2.png)
+
+### Line Chart
+
+![LineChart](./projet/QuickSight/LineChart1.png)
+![LineChart](./projet/QuickSight/LineChart2.png)
+![LineChart](./projet/QuickSight/LineChart3.png)
+
+### Insight - Bottom Ranked
+
+![BottomRanked](./projet/QuickSight/BottomRanked1.png)
+![BottomRanked](./projet/QuickSight/BottomRanked2.png)
+
+### Insight - Period over period
+
+![PeriodOverPeriod](./projet/QuickSight/PeriodOverPeriod1.png)
+![PeriodOverPeriod](./projet/QuickSight/PeriodOverPeriod2.png)
+
+### Insight – YoY Revenue
+
+![YoYRevenue](./projet/QuickSight/YoYRevenue1.png)
+![YoYRevenue](./projet/QuickSight/YoYRevenue2.png)
+
+### Insight – YoY Profit
+
+![YoYProfit](./projet/QuickSight/YoYProfit1.png)
+![YoYProfit](./projet/QuickSight/YoYProfit2.png)
+
+### Pie Chart
+
+![PieChart](./projet/QuickSight/PieChart1.png)
+![PieChart](./projet/QuickSight/PieChart2.png)
+
+
+### Vertical Bar Chart
+
+![VerticalBarChart](./projet/QuickSight/VerticalBarChart1.png)
+![VerticalBarChart](./projet/QuickSight/VerticalBarChart2.png)
+
+### Insight - Forecast
+
+![Forecast](./projet/QuickSight/Forecast1.png)
+![Forecast](./projet/QuickSight/Forecast2.png)
+![Forecast](./projet/QuickSight/Forecast3.png)
